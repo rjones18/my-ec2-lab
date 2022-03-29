@@ -1,0 +1,11 @@
+<!DOCTYPE html lang> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+    maximum-scale=1.0"> <title>EC2 Dashboard</title> <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+<div class="topnav">
+  <a class="active" href="#home">EC2 Dashboard</a>
+  <a href="#news">Billing</a>
+  <a href="#contact">VPC Info</a>
+  <a href="#about">Support</a>
+</div></head> <body> <main> <h1>Private Subnet EC2 Dashboard</h1><p> Below are the ec2 instances currently in the private subenet</p>
+<p> <strong>{{ec2info}}</strong>
+    </p> </main>
+</body>

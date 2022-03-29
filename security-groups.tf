@@ -19,7 +19,7 @@ resource "aws_security_group" "my_public_app_sg" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = ["69.222.131.250/32"] # 0.0.0.0/0
+    cidr_blocks = ["0.0.0.0/0"] # 0.0.0.0/0
   }
 
   egress {
@@ -43,7 +43,7 @@ resource "aws_security_group" "my_private_app_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    security_groups = ["sg-05510ead8055a24ac"]
+    security_groups = ["sg-0acc7d0a1388523d6"]
 
   }
 
