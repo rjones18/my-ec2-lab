@@ -1,11 +1,1 @@
-<!DOCTYPE html lang> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
-    maximum-scale=1.0"> <title>EC2 Dashboard</title> <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
-<div class="topnav">
-  <a class="active" href="#home">EC2 Dashboard</a>
-  <a href="#news">Billing</a>
-  <a href="#contact">VPC Info</a>
-  <a href="#about">Support</a>
-</div></head> <body> <main> <h1>Private Subnet EC2 Dashboard</h1><p> Below are the ec2 instances currently in the private subenet</p>
-<p> <strong>{{ec2info}}</strong>
-    </p> </main>
-</body>
+<html><body><h1>List of instances from the Private Subnet</h1><p>Id: i-0fa1a43718f1555b1<br>Type: t2.micro<br>AMI: ami-019f45141b3ec3550<br>State: {'Code': 16, 'Name': 'running'}<br>Subnet: subnet-03f4df115302716ed<br><br></p><p>Id: i-037601ee06c8fa4dd<br>Type: t2.micro<br>AMI: ami-019f45141b3ec3550<br>State: {'Code': 16, 'Name': 'running'}<br>Subnet: subnet-03f4df115302716ed<br><br></p><p>Id: i-0bbf34a671fcc4415<br>Type: t2.micro<br>AMI: ami-019f45141b3ec3550<br>State: {'Code': 0, 'Name': 'pending'}<br>Subnet: subnet-03f4df115302716ed<br><br></p></body>

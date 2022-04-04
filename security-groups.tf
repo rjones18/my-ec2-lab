@@ -43,7 +43,8 @@ resource "aws_security_group" "my_private_app_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    security_groups = ["sg-0acc7d0a1388523d6"]
+    #cidr_blocks = ["0.0.0.0/0"]
+    security_groups = ["sg-01825440f9dbe8ae8"]
 
   }
 
